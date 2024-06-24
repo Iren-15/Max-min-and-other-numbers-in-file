@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(252, 216, 63);
+  background-image: url(photo.jpg);
+  min-height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  background-color: rgb(95, 75, 162);
+  color: rgb(252, 216, 63);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: beige;
+  color: rgb(95, 75, 162);
+  cursor: pointer;
+}
+
+#file {
+  background-color: rgb(252, 216, 63);
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+table {
+    background-color: rgb(125, 154, 121);
+    color: black;
+    width: 350px;
+}
+
+td {
+    margin: 10px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.res {
+    width: 50px;
+}
+
+label {
+    background-color: rgb(125, 154, 121);
+    color: black;
+    border: 1px black solid;
+    text-align: center;
+    margin: 10px 0 3px 0;
+    padding: 10px;
+}
+
+.scrollbar {
+    background-color:beige;
+    border: 1px black solid;
+    padding: 10px;
+    margin: 0;
+    min-width: 200px;
+    max-width: 800px;
+    height: 40px;
+    text-align: center;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resstyle {
+  background-color:rgb(95, 75, 162);
+  color: rgb(252, 216, 63);
+}
+
+.loader {
+    display: none;
+    border: 8px solid rgb(252, 216, 63);
+    border-top: 8px solid rgb(95, 75, 162);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.containerWithBtn {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .scrollbar {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .scrollbar {
+    max-width: 340px;
+  }
+}

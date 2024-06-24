@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbers</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="file" accept=".txt" id="file" />
+
+      <div class="containerWithBtn">
+        <button class="btn" abled>Розрахувати</button>
+        <div class="loader"></div>
+      </div>
+                        
+      <table>
+        <tr>
+          <td>Максимальне число з файла</td>
+          <td class="maxN res"></td>
+        </tr>
+        <tr>
+          <td>Мінімальне число з файла</td>
+          <td class="minN res"></td>
+        </tr>
+        <tr>
+          <td>Середнє арифметичне значення чисел з файла</td>
+          <td class="averageN res"></td>
+        </tr>
+        <tr>
+          <td>Медіана чисел з файла</td>
+          <td class="medianN res"></td>
+        </tr>
+      </table>
+      <label for="resIncSequence">Найбільша послідовність чисел (які ідуть один за одним), яка збільшується:</label>
+      <div class="scrollbar" id="resIncSequence"></div>
+      
+      <label for="resDesSequence">Найбільша послідовність чисел (які ідуть один за одним), яка зменшується:</label>
+      <div class="scrollbar" id="resDesSequence"></div> 
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
